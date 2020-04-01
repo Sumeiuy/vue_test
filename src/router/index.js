@@ -12,6 +12,8 @@ import Chart from '@/components/chart/index'
 import Echarts from '@/components/Echarts/index'
 // login
 import Login from '@/components/Login/index'
+// Component01动态组件
+import Component01 from '@/components/Component01/index'
 
 Vue.use(Router)
 
@@ -40,5 +42,9 @@ export default new Router({
     path: '/Login',
     name: 'Login',
     component: Login
+  }, {
+    path: '/Component01',
+    name: 'Component01',
+    component: Component01
   }]
 })
