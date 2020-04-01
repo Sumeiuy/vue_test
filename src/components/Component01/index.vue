@@ -1,11 +1,21 @@
 <template>
   <div>
     <component :is="who"></component>
-    <div>
-      <el-button @click="who='index-com'">index</el-button>
-      <el-button @click="who='home-com'">home</el-button>
-      <el-button @click="who='info-com'">info</el-button>
+    <div class="mtop">
+      <el-button size='small'
+                 type="primary"
+                 @click="who='index-com'">index</el-button>
+      <el-button size='small'
+                 type="primary"
+                 @click="who='home-com'">home</el-button>
+      <el-button size='small'
+                 type="primary"
+                 @click="who='info-com'">info</el-button>
     </div>
+    <p class="mtop">以下使用了：keep-alive</p>
+    <keep-alive>
+      <component :is="who"></component>
+    </keep-alive>
   </div>
 </template>
 
@@ -24,4 +34,7 @@ export default {
 }
 </script>
 <style scoped>
+.mtop {
+  margin: 20px 0;
+}
 </style>
