@@ -1,4 +1,4 @@
-# vue-0323
+# vue-demos
 
 > A Vue.js project
 
