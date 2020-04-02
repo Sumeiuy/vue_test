@@ -18,6 +18,10 @@ import Component01 from '@/components/Component01/index'
 import TopFixed from '@/components/TopFixed/index'
 // 数据绑定
 import Datas from '@/components/Datas/index'
+// 计算属性
+import Compute from '@/components/Compute/index'
+// 改变颜色
+import ChangeColor from '@/components/ChangeColor/index'
 
 Vue.use(Router)
 
@@ -58,5 +62,13 @@ export default new Router({
     path: '/Datas',
     name: 'Datas',
     component: Datas
+  }, {
+    path: '/Compute',
+    name: 'Compute',
+    component: Compute
+  }, {
+    path: '/ChangeColor',
+    name: 'ChangeColor',
+    component: ChangeColor
   }]
 })
