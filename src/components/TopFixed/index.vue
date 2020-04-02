@@ -28,6 +28,10 @@ export default {
     this.screenTop = document.documentElement.scrollTop
     // console.log(this.$refs.navRef.offsetTop)
   },
+  beforeDestroy () {
+    // 销毁滚动事件，避免其他页面报错
+    window.onscroll = null
+  },
   methods: {
     viewScroll () {
       // 滚动高度

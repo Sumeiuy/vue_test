@@ -16,6 +16,8 @@ import Login from '@/components/Login/index'
 import Component01 from '@/components/Component01/index'
 // 滚动吸顶效果组件
 import TopFixed from '@/components/TopFixed/index'
+// 数据绑定
+import Datas from '@/components/Datas/index'
 
 Vue.use(Router)
 
@@ -52,5 +54,9 @@ export default new Router({
     path: '/TopFixed',
     name: 'TopFixed',
     component: TopFixed
+  }, {
+    path: '/Datas',
+    name: 'Datas',
+    component: Datas
   }]
 })
