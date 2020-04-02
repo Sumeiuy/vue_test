@@ -1,15 +1,15 @@
 # vue-demos
 
-> A Vue.js project
+> vue入门实例
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+npm install 或者 yarn (推荐 yarn)
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run dev 或者 npm start
 
 # build for production with minification
 npm run build
