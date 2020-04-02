@@ -25,12 +25,12 @@ import HomeCom from './HomeCom'
 import InfoCom from './InfoCom'
 
 export default {
+  components: { IndexCom, HomeCom, InfoCom },
   data () {
     return {
-      who: 'info-com',
+      who: 'info-com'
     }
-  },
-  components: { IndexCom, HomeCom, InfoCom },
+  }
 }
 </script>
 <style scoped>

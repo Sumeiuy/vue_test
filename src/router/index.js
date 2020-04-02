@@ -14,6 +14,8 @@ import Echarts from '@/components/Echarts/index'
 import Login from '@/components/Login/index'
 // Component01动态组件
 import Component01 from '@/components/Component01/index'
+// 滚动吸顶效果组件
+import TopFixed from '@/components/TopFixed/index'
 
 Vue.use(Router)
 
@@ -46,5 +48,9 @@ export default new Router({
     path: '/Component01',
     name: 'Component01',
     component: Component01
+  }, {
+    path: '/TopFixed',
+    name: 'TopFixed',
+    component: TopFixed
   }]
 })
